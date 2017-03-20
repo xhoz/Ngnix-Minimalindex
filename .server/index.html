@@ -1,0 +1,75 @@
+<style>
+
+body{
+	color:#3f3f3f;
+	
+}
+a {
+color: #0366d6;
+text-decoration:none;
+margin-bottom:10px;
+display:block;
+}
+
+a::after{display:none;}
+
+hr{
+display:none;
+}
+
+h1 {display:none;}
+
+pre{
+width:700px;
+margin:0 auto;
+margin-top:100px;
+color:white;
+font-family: Consolas,monospace
+}
+
+
+pre a[href]:before,
+pre a[href$="/"]:before {
+    content: "";
+    padding: 5px 25px 0 0;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+a[href]:before {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAy0lEQVQ4T7XTsUoDQRCA4e9Kn0CElJJSWxtJ4SuksM8zREQRlORN0liEQEqrkDZ1UluqWNuKLNzhZMnlkuK2WmaWf/4ZZgv/p4snnIRYvE4wz3NFCKQHQ3zuANyW8FRgFvMRMEW/pnoC/OIGbxFyDOAKq9LkvmrnUMAproNdMk1WDgXknb22CrjAQ80wR9igXYMz9GoMFvhqMsgnHllLfDcBaopvhffO4LJcll2gZ6xbM0if6Q4fDT108IJBvonneNzznSvuD8Z4T4E/eJcwEVTuRc8AAAAASUVORK5CYII=);
+}
+
+a[href$="/"]:before {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAArElEQVQ4T2NkoBAwUqifAWzAxIkT/RkYGAzRDWNiYrqQm5u7AZ8lYAMmT548KTc3Nw9d4aRJkxb+/fs3v7Cw8AMuQ2AuaMjPz29AV9TX1yfNwsIy5////yfR5RgZGX/9+vVrFl4D8Dl95syZ/D9//swm2wBo2DWMGjCRSmEwadKkyXl5ebmkJOv+/n4BJiamTFhK9Pv3758RKQYwMDD8/Pv370zqZCYSbUZRDgCeYF4T86pGOgAAAABJRU5ErkJggg==)
+
+</style>
+<title>Xhoz Lab</title>
+
+
+
+<body onload="remove()">
+
+<script>
+
+
+function remove() {
+
+
+// Remove / from links 
+var numberOflinks = document.getElementsByTagName("a");
+	
+var i;
+
+for (i = 0; i < numberOflinks.length; i++) {
+	
+
+			var link = document.getElementsByTagName("a")[i].innerHTML;
+				
+			var  resault = link.replace("/"," ");
+			
+			document.getElementsByTagName("a")[i].innerHTML = resault;
+			
+			}
+}
+</script>
