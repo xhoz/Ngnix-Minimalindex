@@ -4,4 +4,4 @@ Just copy ".server" folder (with index.html file) to your root folder (html in m
 
  ✌️ enjoy !
  
-![Screenshot](https://github.com/xhoz/Ngnix-Minimalindex/blob/master/screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/xhoz/Ngnix-Minimalindex/master/screenshot.PNG)
